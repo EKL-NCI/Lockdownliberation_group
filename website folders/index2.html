@@ -1,0 +1,146 @@
+<!DOCTYPE html><!-- page done by josh-->
+<html>
+	<head>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+		<title> Gallery | Lockdown Liberation</title>
+		
+        <script type="text/javascript">
+			//Function that makes text appear when image is clicked on for image 1
+            function displayText1() {
+    		document.getElementById("text").innerHTML = "This is Khan Academy. This website is a massive learning tool that anyone studying a field engaged with mathematics should be acquainted with! They have help with all sorts of topics in regards to maths and even sciences! Be sure to check them out if you think you might benefit.";
+			}
+			//Function for image 2
+            function displayText2() {
+            document.getElementById("text").innerHTML = "This is W3Schools. This website is the biggest learning tool available for people interested in learning how to programme and code. W3Schools is able to help you with anything to do with coding, databases and much more. It is by far one of the most useful and efficient learning tools available and we would highly recommend checking them out if you have any interest in such topics."
+            }
+			//Function for image 3
+            function displayText3() {
+            document.getElementById("text").innerHTML = "This is Memrise. Memrise is a website that is based around language learning, and has help with over 20 different languages to choose from! Memrise has been known to help many people throughout their journey of language learning and even has a mobile app you can download to study and test yourself on the go! We would definitely recommend giving Memrise a try if you are learning any languages, especially if you are a beginner!"
+            }
+			//Function for image 4
+            function displayText4() {
+            document.getElementById("text").innerHTML = "This is Science Direct! Science Direct is, as you would assume, based around the study of sciences! They are the world's leading source for many types of scientific research, in which you can explore many articles, books and scientific journals! We would definitely recommend checking them out if you think they would interest you or you could benefit from the information!"
+            }
+
+        </script>
+	</head>
+	<body>
+	<div class="container">
+			<!-- This is the main navigation-->
+				<div class="mainNav">
+		
+					<ul>
+						<li> <a href="index1.html">Home</a> </li>
+						<li> <a class="active" href="index2.html">Gallery</a> </li>
+						<li> <a href="index3.html">MiniGame</a>  </li>
+					</ul>
+				</div>
+						<div class="banner"> <img src="images/lockdownlib.jpg"></div>
+			
+				<div class="mainInfo">
+					<h1 > Gallery </h1>
+					
+
+			<div class="box1">
+	<!--Gallery images with onClick attribute to trigger JavaScript function-->
+	
+	<!--First image-->
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="https://www.khanacademy.org">
+				<img src="images/Khan.jpg" alt="Khan Academy" width="600" height="400" onClick="displayText1()">
+			</a>
+			<div class="desc">This is Khan Academy!</div>
+		</div>
+	</div>
+
+	<!--Second image-->
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="https://www.w3schools.com">
+				<img src="images/w3schools.jpg" alt="w3schools" width="600" height="400" onClick="displayText2()">
+			</a>
+			<div class="desc">This is W3Schools!</div>
+		</div>
+	</div>
+
+	<!--Third image-->
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="https://www.memrise.com">
+				<img src="images/memrise.png" alt="memrise" width="600" height="400" onClick="displayText3()">
+			</a>
+			<div class="desc">This is Memrise!</div>
+		</div>
+	</div>
+
+	<!--Fourth image-->
+
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="https://www.sciencedirect.com">
+				<img src="images/sciencedirect.jpg" alt="Science Direct" width="600" height="400" onClick="displayText4()">
+			</a>
+			<div class="desc">This is Science Direct!</div>
+		</div>
+	</div>
+	
+	<!--Clearfix prevents elements from overflowing outside of the element containing it-->
+
+	<div class="clearfix"></div>
+
+	<div style="padding:6px;"></div>
+
+	<!--This is the text that will be changed by the JavaScript functions when an image is clicked-->
+
+	<div id="text-display">
+		<p id="text">Click any image to be brought to the website and be given more information!</p>
+	</div>
+
+		<h3>These are some websites and tools that we think definitely have the potential to help you study more effectively throughout lockdown. Each one is focused on a different area of study, each providing a hugely vast amount of information regarding whichever topic you are studying! We firmly believe that these websites will be beneficial to anyone using them, and highly recommend you to give them a try!</h3>
+
+		<br>
+
+		<!--Section with music recommendations for studying more efficiently-->
+
+		<h3>Studying with music</h3>
+		
+		<p>We have found that certain types of music can really aid people in focusing on their work better. We would recommend the type of music to be calming or soothing, something that could relax your mind and allow you to think straight without making any more distractions for your brain while you are studying. Here is a playlist we think is a good example of something you might listen to while studying. We hope it helps!</p>
+
+		<!--iframe tag to embed youtube video into website-->
+		<iframe width="900" height="400" src="https://www.youtube.com/embed/A09RO4xCI1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	</div>
+		<!--Images on right hand side of screen-->
+		<div class="box2">
+					<ul>
+						<li> <img  src="images/lofistudy1.jpg" width="50%"> </li>
+						<li> <img  src="images/lofistudy2.jpg" width="50%"> </li>
+						<li> <img  src="images/lofistudy3.jpg" width="50%"> </li>
+						<li> <img  src="images/lofistudy4.jpg" width="50%"> </li>
+					</ul>
+				</div>
+	
+	
+		</div>
+	</body>
+	<footer>
+	<!--This is the footer navigation bar -->
+				<div class="footerNav">
+				<ul>
+						<li> <a href="index1.html">Home</a> </li>
+						<li> <a class="active" href="index2.html">Gallery</a> </li>
+						<li> <a href="index3.html">MiniGame</a>  </li>
+						<li style="float:right"> <p> © Lockdown Liberation 2022</p> </li>
+					</ul>
+				</div>
+			</div>
+	</footer>
+</html>

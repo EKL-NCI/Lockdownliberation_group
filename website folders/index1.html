@@ -1,0 +1,118 @@
+<!DOCTYPE html><!-- page done by Erin-->
+<html>
+	<head>
+	<!-- links page to stylesheet and fonts-->
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<!-- allows page to be responsive-->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+	<!-- page title -->
+			<title> Home | Lockdown Liberation</title>
+			<!-- this is the javascript validation for the form below -->
+					<script type="text/javascript">
+						function validate(){
+							
+							var valid = true;
+							var msge = "Incomplete form, ";  
+							if (document.getElementById("fn").value == "") {
+							msge += "You need to enter your Name.  ";
+								valid = false;
+							}
+							if(document.getElementById("dt").value == "") {
+							msge +="You need to enter your Date of Birth.  ";
+								valid = false;
+							}
+							if(document.getElementById("em").value == "") {
+							msge+="You need to enter your Email. ";
+								valid = false;
+							}
+							if(document.getElementById("ph").value == "") {
+							msge+="You need to enter your Phone Number. ";
+								valid = false;
+							}
+							if(!valid){
+							document.getElementById("msge1").innerHTML = msge;
+							}
+							
+							return valid;
+						}
+					</script>
+	</head>
+			<body>
+			
+			<div class="container">
+			<!-- this is the main navigation-->
+				<div class="mainNav">	
+				<!-- puts links into unordered list to display navigation-->
+					<ul>
+						<li> <a class="active" href="index1.html">Home</a> </li>
+						<li> <a href="index2.html">Gallery</a> </li>
+						<li> <a href="index3.html">MiniGame</a> </li>
+						
+					</ul>
+
+				</div>
+				<!-- this div is used to display the logo banner on the webpage -->
+						<div class="banner"> <img src="images/lockdownlib.jpg"></div>
+			
+			<!-- main information on web page-->
+				<div class="mainInfo">
+				<!-- this is the main information box of the webpage -->
+				<div class="box1">
+					<p><h1>Home</h1>Lockdown liberation was made to create a website with a library of educational resources for those working and studying at home to access. It provides multiple educational sites and features to aid in efficiency with everyone who is at home. <br>
+
+					Personally, when I had to study from home during the lockdown, it was very difficult for me to source good websites and information as well as keep the motivation to engage in my studies. Engaging in online studies or studies from home can be very difficult, distractions from things like family members, chores, pets and internet problems are all challenges you have to face. However, with the use of our website Lockdown Liberation, accessing good information can be quick and easy! <br> <br>
+
+					Some tips we suggest for studying at home are:
+
+					</p>
+					
+					<ol>
+							<li> <p>Keep your work area separate <br>
+									You should assign your study to a certain area in your house that if free from distractions. It also can be difficult to study somewhere like your bedroom where the space is associated with comfort. </p> </li>
+							<li> <p>Get rid of the phone! <br>
+									Although your only entertainment at this time may be online, whether it be responding to messages from friends or checking social media, your mobile phone is a big distraction when it comes to study. In schooling environments, it is a common practice to either not have your phone or not use it very often, but with the freedom in your own home it is very easy to lift your phone and completely side track your study plans.  </p> </li>
+							<li> <p>Plan your study time <br>
+									Planning study time can seem like a chore, but creating deadlines and goals for yourself while studying can motivate you. Simply planning to study certain subjects or topics on different days and giving yourself the goal to finish a section can be a great boost in motivation. </p> </li>
+							<li> <p>Always remember to take breaks! <br>
+									Taking breaks can seem to be unproductive, but putting too much stress on yourself and not allowing yourself to have dedicated time to you can be draining. Remember to make yourself a cup of tea or maybe watch an episode of your favourite show during study breaks, perhaps check up on your friends or even read a book. </p> </li>
+					<br> <br> <br>
+					
+							<form name="form1" onsubmit="return validate()" method="post">
+						<!-- this is the form -->
+						<p> Contact Us! </p>
+							<ul>
+								<li> Name: <input required= "true" type="text"  id="fn"> </li>
+								<li> Date of Birth: <input required= "true" type="date" id="dt"> </li>
+								<li> Email: <input required= "true" type="email" id="em"> </li>
+								<li> Telephone Number:  <input required= "true" type="tel" id="phone"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> </li>
+									<input type="submit" value="Submit form">
+						</form>
+							<p id="msge1"></p>
+				</div>
+			<!-- this is the sidebar that displays images -->
+				<div class="box2">
+					<ul>
+						<li> <img  src="images/side1.jpg" width="50%"> </li>
+						<li> <img  src="images/side2.jpg" width="50%"> </li>
+						<li> <img  src="images/side3.jpg" width="50%"> </li>
+						<li> <img  src="images/side4.jpg" width="50%"> </li>
+					</ul>
+				</div>
+				</div>
+			</body>
+	<footer>
+	<!--this is the footer navigation bar -->
+				<div class="footerNav">
+				<ul>
+						<li> <a class="active" href="index1.html">Home</a> </li>
+						<li> <a href="index2.html">Gallery</a> </li>
+						<li> <a href="index3.html">MiniGame</a>  </li>
+						<li style="float:right"> <p> © Lockdown Liberation 2022</p> </li>
+					</ul>
+				</div>
+			</div>
+	</footer>
+</html>
