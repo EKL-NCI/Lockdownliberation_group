@@ -1,51 +1,52 @@
 <!DOCTYPE html><!-- page done by jamie-->
 <html>
-<link href="style.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-		<title> Minigame | Lockdown Liberation </title>
-		<script type="text/javascript">
-		function generateNumbers() {
-        var num1 = Math.floor(Math.random() * 100);
-        var num2 = Math.floor(Math.random() * 100);
-        document.getElementById("numbers").innerHTML = num1 + "+" + num2;
-		var sum = num1 + num2;
-		document.getElementById("sum").innerHTML = sum;
-		}
-	  //generates 2 random numbers between 1 and 100, then displays both of them on the HTML page, then seperatley adds them together and saves them as a variable//
-	  
-		
+	<head>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=0">
+			<title> Minigame | Lockdown Liberation </title>
+			<script type="text/javascript">
+			function generateNumbers() {
+		var num1 = Math.floor(Math.random() * 100);
+		var num2 = Math.floor(Math.random() * 100);
+		document.getElementById("numbers").innerHTML = num1 + "+" + num2;
+			var sum = num1 + num2;
+			document.getElementById("sum").innerHTML = sum;
+			}
+		  //generates 2 random numbers between 1 and 100, then displays both of them on the HTML page, then seperatley adds them together and saves them as a variable//
 
-		
-		function feedback(){
 
-			var items= ["Great Job!","Thank you for playing!","Congrats!","Excellent!","Exceptional!","Keep it up!"];
-			
-			
-			var index = Math.floor(Math.random()*6)
-			items[index];
-			document.getElementById("praise").innerHTML = items[index];
-			
-			var userAnswer = document.getElementById("sum").value;
-					
-			if (userAnswer !== sum) {
-			document.getElementById("ANS").innerHTML = "You won!";
-			} 
-			
-			//else {
-			 // document.getElementById("ANS").innerHTML = "You lost!";
-			//} 
-			// this line not only generates a random piece of feedback to the user when they submit their form, but is also the function that checks whether the answer was correct or incorrect//
-			
-			
-			
-		}
-		// gives the player random feedbback when clicked//
-		
-		
-		</script>
+
+
+			function feedback(){
+
+				var items= ["Great Job!","Thank you for playing!","Congrats!","Excellent!","Exceptional!","Keep it up!"];
+
+
+				var index = Math.floor(Math.random()*6)
+				items[index];
+				document.getElementById("praise").innerHTML = items[index];
+
+				var userAnswer = document.getElementById("sum").value;
+
+				if (userAnswer !== sum) {
+				document.getElementById("ANS").innerHTML = "You won!";
+				} 
+
+				//else {
+				 // document.getElementById("ANS").innerHTML = "You lost!";
+				//} 
+				// this line not only generates a random piece of feedback to the user when they submit their form, but is also the function that checks whether the answer was correct or incorrect//
+
+
+
+			}
+			// gives the player random feedbback when clicked//
+
+
+			</script>
 	</head>
 	<body>
 	<div class="container">
